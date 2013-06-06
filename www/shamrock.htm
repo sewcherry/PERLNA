@@ -1,83 +1,366 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<script src="files/jquery.js" type="text/javascript"></script>
-<script type="text/javascript" src="files/ajax.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TheShamrockClub.com</title>
-<link rel="stylesheet" href="files/template.css" type="text/css">
-</head>
+<!DOCTYPE html>
+<html lang="en"><head>
 
-<body id="page_bg">
-<table width="980" align="center" border="0" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td background="files/top_bg.png"><img src="files/xparent.gif" width="1" height="50"></td>
-  </tr>
-  <tr>
-    <td>
-    	<table id="under21" width="100%" border="0" cellpadding="0" cellspacing="5">
-          <tbody><tr>
-            <td>This site contains adult content. No person under 21 years of age is allowed to view this site.<br>If you are under 21 years of age, please leave this site immediately.</td>
-          </tr>
-        </tbody></table>
-    </td>
-  </tr>
-  <tr>
-    <td><img src="files/xparent.gif" width="1" height="5"></td>
-  </tr>
-  <tr>
-    <td>
-        <table id="heading" width="100%" border="0" cellpadding="0" cellspacing="0">
-          <tbody><tr>
-            <td valign="bottom" width="393" background="files/headerimg_back.png"><a href="http://www.theshamrockclub.com/index.cfm"><img src="files/headerimg2.png" width="393" border="0" height="350"></a></td>
-            <td valign="middle" width="100%" align="center">
-                <table border="0" cellpadding="10" cellspacing="0">
-                  <tbody><tr>
-                        <td><div class="registerbox">
-                        <div class="stillopen">The Shamrock Club is open!</div>
-                        <div class="outage">
-                          <p>Due to a catastrophic outage with our host 
-that is beyond our control, our site is only available on a limited 
-basis. We are currently experiencing technical difficulties.</p>
-                            <ul>
-                                <li><span class="bullethead">NEW MEMBERS -</span>
- You may Register for a membership if you do not already have one by  
-emailing your full name(s), birthdates, handle and face picture(s) to <a href="mailto:shamrockdev@yahoo.com">shamrockdev@yahoo.com</a>.                                
-                                </li><li><span class="bullethead">CURRENT MEMBERS -</span> If you are a current member, please bring your card with you to the club.
-                                </li><li><span class="bullethead">CALENDAR -</span> SATURDAY May 18 - SPRING FLING - Come show off your new SKIMPY SUMMER DUDS!<br>SATURDAY May 25 - Passion Party Fever - We will have a Passion Party rep in the house with specials JUST for our guests!
-                            </li></ul>
-                        </div>
-                        </div>
-                        </td>
-                      
-                  </tr>
-                </tbody></table>
-            </td>
-          </tr>
-        </tbody></table>
-      
-    </td>
-  </tr>
-  <tr>
-    <td><img src="files/xparent.gif" width="1" height="5"></td>
-  </tr>
-  <tr>
-    <td>
-    	<table id="maincontent" width="100%" border="0" cellpadding="0" cellspacing="7">
-            <tbody><tr>
-                <td>
-              We are experiencing technical difficulties. To sign up for
- the club email your full name(s), birthdates, handle and face 
-picture(s) to <a href="mailto:shamrockdev@yahoo.com">shamrockdev@yahoo.com</a>. </td>
-            </tr>
-        </tbody></table>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><img src="files/009732.gif" width="98%" height="7"></td>
-  </tr>
-  <tr>
-    <td align="center"><div id="footer">©2012 TheShamrockClub.com</div></td>
-  </tr>
-</tbody></table>
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="shamrock_files/base.css">
+	<link rel="stylesheet" href="shamrock_files/skeleton.css">
+	<link rel="stylesheet" href="shamrock_files/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<meta charset="utf-8">
+	<title>The Shamrock Club</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Favicons
+	================================================== -->	
+	<link rel="shortcut icon" href="http://swinguniverse.com/shamrock2/peoplepods/themes/shamrock-responsive/img/shamrock_icon_16.png">
+	<link rel="icon" href="http://swinguniverse.com/shamrock2/peoplepods/themes/shamrock-responsive/img/shamrock_icon_57.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="http://swinguniverse.com/shamrock2/peoplepods/themes/shamrock-responsive/img/shamrock_icon_57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://swinguniverse.com/shamrock2/peoplepods/themes/shamrock-responsive/img/shamrock_icon_72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://swinguniverse.com/shamrock2/peoplepods/themes/shamrock-responsive/img/shamrock_icon_114.png">
+
+	<script src="shamrock_files/jquery-1.js"></script>
+	<script src="shamrock_files/jquery_002.js"></script>
+	<script src="shamrock_files/jquery.js"></script>
+	<script src="shamrock_files/hidemobile.js"></script>
+	<script src="shamrock_files/datetimepicker.js"></script>
+    <script src="shamrock_files/shamrock_common.js"></script>
+
+		
+	<link rel="stylesheet" type="text/css" href="shamrock_files/styles.css" media="screen">
+	
+		
+		
+		<link rel="alternate" type="application/rss+xml" title="RSS: The Shamrock Club" href="http://swinguniverse.com/shamrock2/feeds">
+			
+
+	<script type="text/javascript">
+		var siteRoot = "http://swinguniverse.com/shamrock2";
+		var podRoot = "http://swinguniverse.com/shamrock2/peoplepods";
+		var themeRoot = "http://swinguniverse.com/shamrock2/peoplepods/themes/shamrock-responsive";
+		var API = siteRoot + "/api/2";		
+	</script>
+
+	<!-- HTML5 fix for IE 6-8 -->
+	<!--[if lt IE 9]>
+	<script>
+	  var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+	    "figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+	    "progress,section,time,video").split(',');
+	  for (var i = 0; i < e.length; i++) {
+	    document.createElement(e[i]);
+	  }
+	</script>
+	<![endif]-->	
+
+	<script type="text/javascript" src="shamrock_files/javascript.js"></script>
+
+</head>
+<body id="body">
+		<!-- begin header -->
+	<header>
+			<!-- begin login status -->
+            			<section class="container topbg">
+				<div class="one-third column" id="siteName">
+					<a href="http://swinguniverse.com/shamrock2"><img src="shamrock_files/top_logo2.png" border="0"></a>
+				</div>
+				<div class="two-thirds column" id="login_status">
+					
+						Welcome, <a href="http://swinguniverse.com/shamrock2/people/keladmin" title="View My Profile">keladmin</a> |
+													<a title="Personal Messaging" href="http://swinguniverse.com/shamrock2/inbox">Inbox</a> |
+												<a href="http://swinguniverse.com/shamrock2/logout" title="Logout">Logout</a>
+				</div>
+			</section>
+			<!-- end login status -->
+						
+			<!-- begin main navigation -->						
+            <nav class="container">
+                <ul><li><a href="http://swinguniverse.com/shamrock2" title="Home">Home</a></li>
+                    <li><a href="http://swinguniverse.com/shamrock2/show" title="What's New?">What's New?</a></li>                                        <li><a href="http://swinguniverse.com/shamrock2/calendar" title="Club Calendar">Calendar</a></li>
+                                            <li><a href="http://swinguniverse.com/shamrock2/peoplepods/admin" title="Admin Tools">Admin Tools</a></li>
+                                                                <li id="topsearch">
+                        <form method="get" action="http://swinguniverse.com/shamrock2/search">
+                            <label for="nav_search_q">Search</label> <input value="this site" style="color: rgb(204, 204, 204);" name="q" id="nav_search_q" size="12" class="repairField" data-default="this site">
+                        </form>
+                        </li>
+                    							
+                    <li class="clearer"></li>
+                </ul>
+                <div class="clearer"></div>
+            </nav>
+            <!-- end main navigation -->
+                        
+		<!-- end header -->
+	</header>
+		
+	<section id="main" class="content container">	<div class="two-thirds column">
+		<section id="editform">
+	<form class="valid" action="http://swinguniverse.com/shamrock2/edit" method="post" id="post_something" enctype="multipart/form-data">
+								
+			<label for="headline" id="edit_form_title">CREATE SOMETHING:</label>
+			<ul id="post_options">
+				<li class="post_option">
+					<a href="#" id="add_body" onclick="return togglePostOption('body');">+ More</a>
+				</li>
+				<li class="post_option">
+					<a href="#" id="add_photo" onclick="return togglePostOption('photo');">+ Image</a>
+				</li>				
+				<li class="post_option">
+					<a href="#" id="add_video" onclick="return togglePostOption('video');">+ Video</a>
+				</li>
+				<li class="post_option">
+					<a href="#" id="add_link" onclick="return togglePostOption('link');">+ Link</a>
+				</li>
+				<li class="post_option">
+					<a href="#" id="add_tags" onclick="return togglePostOption('tags');">+ Tags</a>
+				</li>			
+			</ul>
+			<textarea name="headline" id="headline" class="text expanding required" required=""></textarea>
+
+		<div class="clearer"></div>
+		<p class="post_extra" id="post_body">
+			<label for="body">Write More:</label>
+			<textarea name="body" id="body" class="htmlarea text"></textarea>
+		</p>
+		<p class="post_extra" id="post_photo">
+			<label for="photo">Image:</label>
+			<input name="img" id="img" type="file">
+					</p>				
+		<p class="post_extra" id="post_video">
+			<label for="link">Video:</label>
+			<input name="meta_video" id="video" class="text">
+			(Paste a YouTube, Google Video, Veoh or Vimeo link.)
+		</p>
+		<p class="post_extra" id="post_link"><label for="link">Link:</label>
+		<input name="link" id="link" class="text">
+		</p>
+		<p class="post_extra" id="post_tags"><label for="tags">Tags:</label>
+		<input style="display: none;" name="tags" id="tags" class="text"><div style="width: 300px; height: 100px;" id="tags_tagsinput" class="tagsinput"><div id="tags_addTag"><input style="color: rgb(102, 102, 102);" id="tags_tag" value="add a tag" default="add a tag"></div><div class="tags_clear"></div></div>
+		(Separate tags with a space: monkeys robots ninjas)
+		</p>
+
+		<p>
+			<input id="editform_save" value="Save" type="submit">
+
+									<input name="friends_only" value="friends_only" type="checkbox">
+						<label for="friends_only">Friends Only</label>&nbsp;&nbsp;&nbsp;
+							</p>
+		<div class="clearer"></div>
+	</form>		
+	<div class="clearer"></div>
+</section> <!-- end editform -->
+
+<script type="text/javascript">
+// display the appropriate fields in the edit form.
+						
+</script>	
+		
+						
+				
+		<!-- this is where new posts from friends and groups show up -->
+		<section class="stack_output stack_my_new_stuff">
+<ul>
+			<li>
+		<header>
+			<h1>My New Stuff</h1>
+		</header>
+		</li>
+		<li class="content_short content_document odd   first" id="content132">	
+		<aside class="person_avatar">
+	<a href="http://swinguniverse.com/shamrock2/people/keladmin" title="View keladmin's profile"><img src="shamrock_files/noimage.png" alt="keladmin"></a>
+</aside>
+				<article class="attributed_content content_body">
+				<header>
+					<span class="content_meta">
+						<span class="content_author"><a href="http://swinguniverse.com/shamrock2/people/keladmin" class="person_permalink" title="keladmin">keladmin</a></span> posted (<span class="content_time">23 hours ago</span>)
+					</span>
+					<h1><a href="http://swinguniverse.com/shamrock2/show/more-info" title="more info">more info</a></h1>
+				</header>
+				
+					
+
+							
+
+
+						
+
+				<p>here too</p>				
+				<div class="clearer"></div>
+
+				<ul class="content_options">
+					<li class="comments_option">
+						<a href="http://swinguniverse.com/shamrock2/show/more-info">No comments</a>
+					</li>
+											<li class="watching_option">
+							<a href="#toggleFlag" data-flag="watching" data-active="Stop tracking" title="Track new comments on the dashboard" data-inactive="Track" data-content="132" class="trackingLink active">Stop tracking</a>
+						</li>
+									
+																<li class="delete_option">
+							<a href="#deleteContent" data-content="132">Delete</a>
+						</li>
+									</ul>
+		</article>
+		<div class="clearer"></div>
+	</li>
+	<li class="content_short content_document  even  " id="content127">	
+		<aside class="person_avatar">
+	<a href="http://swinguniverse.com/shamrock2/people/keladmin" title="View keladmin's profile"><img src="shamrock_files/noimage.png" alt="keladmin"></a>
+</aside>
+				<article class="attributed_content content_body">
+				<header>
+					<span class="content_meta">
+						<span class="content_author"><a href="http://swinguniverse.com/shamrock2/people/keladmin" class="person_permalink" title="keladmin">keladmin</a></span> posted (<span class="content_time">1 day ago</span>)
+					</span>
+					<h1><a href="http://swinguniverse.com/shamrock2/show/title" title="title">title</a></h1>
+				</header>
+				
+					
+
+							
+
+
+						
+
+				<p>MORE MORE more!</p>				
+				<div class="clearer"></div>
+
+				<ul class="content_options">
+					<li class="comments_option">
+						<a href="http://swinguniverse.com/shamrock2/show/title">No comments</a>
+					</li>
+											<li class="watching_option">
+							<a href="#toggleFlag" data-flag="watching" data-active="Stop tracking" title="Track new comments on the dashboard" data-inactive="Track" data-content="127" class="trackingLink active">Stop tracking</a>
+						</li>
+									
+																<li class="delete_option">
+							<a href="#deleteContent" data-content="127">Delete</a>
+						</li>
+									</ul>
+		</article>
+		<div class="clearer"></div>
+	</li>
+	<li class="content_short content_document odd  last " id="content126">	
+		<aside class="person_avatar">
+	<a href="http://swinguniverse.com/shamrock2/people/keladmin" title="View keladmin's profile"><img src="shamrock_files/noimage.png" alt="keladmin"></a>
+</aside>
+				<article class="attributed_content content_body">
+				<header>
+					<span class="content_meta">
+						<span class="content_author"><a href="http://swinguniverse.com/shamrock2/people/keladmin" class="person_permalink" title="keladmin">keladmin</a></span> posted (<span class="content_time">1 day ago</span>)
+					</span>
+					<h1><a href="http://swinguniverse.com/shamrock2/show/plenv---yet-another-perl5-installation-management-tool-by-tokuhiro-matsuno-tokuhirom-from-shibuyapm-date-tuesday-4-june-2013-1430-duration-20-minutes-target-audience-any-language-english-tags-plenv-plenv-is-yet-another-perl5-environment-manager-its-inspired-from-rubys-rbenv-plenv-is---very-fast-at-bazshrc--switch-perl5-version-per-project-very-easily-ref-httpblog64porgentry20130121134639-httpsmetacpanorgreleaseapp-plenv-" title="plenv - yet another Perl5 installation management tool">plenv - yet another Perl5 installation management tool</a></h1>
+				</header>
+				
+					
+
+							
+
+
+						
+
+				<p></p><p>By Tokuhiro Matsuno (‎tokuhirom‎) from Shibuya.pm<br>Date: Tuesday, 4 June 2013 14:30<br>Duration: 20 minutes<br>Target audience: Any<br>Language: English<br>Tags: plenv</p><p>plenv is yet another Perl5 environment manager, it's inspired from ruby's rbenv.</p><p>plenv is ...<br>* very fast at (ba|z)shrc<br>* switch perl5 version per project, very easily</p><p>ref.<br><a href="http://blog.64p.org/entry/2013/01/21/134639">http://blog.64p.org/entry/2013/01/21/134639</a><br><a href="https://metacpan.org/release/App-plenv">https://metacpan.org/release/App-plenv </a></p>				
+				<div class="clearer"></div>
+
+				<ul class="content_options">
+					<li class="comments_option">
+						<a href="http://swinguniverse.com/shamrock2/show/plenv---yet-another-perl5-installation-management-tool-by-tokuhiro-matsuno-tokuhirom-from-shibuyapm-date-tuesday-4-june-2013-1430-duration-20-minutes-target-audience-any-language-english-tags-plenv-plenv-is-yet-another-perl5-environment-manager-its-inspired-from-rubys-rbenv-plenv-is---very-fast-at-bazshrc--switch-perl5-version-per-project-very-easily-ref-httpblog64porgentry20130121134639-httpsmetacpanorgreleaseapp-plenv-">No comments</a>
+					</li>
+											<li class="watching_option">
+							<a href="#toggleFlag" data-flag="watching" data-active="Stop tracking" title="Track new comments on the dashboard" data-inactive="Track" data-content="126" class="trackingLink active">Stop tracking</a>
+						</li>
+									
+																<li class="delete_option">
+							<a href="#deleteContent" data-content="126">Delete</a>
+						</li>
+									</ul>
+		</article>
+		<div class="clearer"></div>
+	</li>
+	
+	<li class="stack_footer pager">
+					</li>
+</ul>
+</section>
+		
+		
+	</div>
+	<div class="one-third column">
+		<section id="member_info" class="padded">
+	<aside class="person_avatar">
+	<a href="http://swinguniverse.com/shamrock2/people/keladmin" title="View keladmin's profile"><img src="shamrock_files/noimage.png" alt="keladmin"></a>
+</aside>
+	<section class="attributed_content">
+		<b><a href="http://swinguniverse.com/shamrock2/people/keladmin" class="person_permalink" title="keladmin">keladmin</a></b>
+										<a href="http://swinguniverse.com/shamrock2/editprofile">Edit Profile</a>
+			</section>
+	<div class="clearer"></div>
+</section>			
+
+
+			<ul id="navigator" class="padded">
+				<li class="dashboard_navigator dashboard_active"><a href="http://swinguniverse.com/shamrock2">New Stuff</a></li>
+				<li class="dashboard_navigator sub_option">
+	You are following <a href="http://swinguniverse.com/shamrock2/friends">0 people</a>
+</li>
+<li class="dashboard_navigator sub_option">
+	<a href="http://swinguniverse.com/shamrock2/friends/followers">1 person is</a> following you.
+</li>
+<li class="dashboard_navigator sub_option">
+	<a href="http://swinguniverse.com/shamrock2/friends/recommended">Meet some new people »</a>
+</li>
+				<li class="dashboard_navigator dashboard_navigator_last"><a href="http://swinguniverse.com/shamrock2/replies">Activity</a></li>
+							</ul>					
+			
+					<div class="sidebar padded" id="activity_stream_sidebar">
+		<h3>Recent Activity</h3>
+		<ul>
+			<section class="stack_output ">
+<ul>
+				<li class="empty_list">
+							Nothing to show!
+					</li>
+	</ul>
+</section>		</ul>
+	</div>
+			
+			<!--<div class="sidebar padded" id="ad_unit_sidebar">
+	Place Ad Code Here
+</div>			<div class="padded sidebar" id="tag_cloud_sidebar">
+</div>-->
+			
+			<div class="sidebar padded" id="recent_visitors_sidebar">
+	<h3>Recent Visitors</h3>
+	<ul class="stack_output "><li><a href="http://swinguniverse.com/shamrock2/people/keladmin" class="person_permalink" title="keladmin">keladmin</a></li><li><a href="http://swinguniverse.com/shamrock2/people/test30" class="person_permalink" title="test30">test30</a></li><li><a href="http://swinguniverse.com/shamrock2/people/test50" class="person_permalink" title="test50">test50</a></li>	
+</ul></div>
+	</div>
+	<div class="clearer"></div>
+		<div class="clearer"></div>
+	</section> <!-- main -->
+	<footer class="container">
+		<!-- make one main footer bar -->
+		<div class="padded">
+			<a href="http://swinguniverse.com/shamrock2" title="Home">Home</a> |
+			<a href="http://swinguniverse.com/shamrock2/faq" title="FAQ">FAQ</a> |
+			<a href="http://swinguniverse.com/shamrock2/tandc" title="Terms &amp; Conditions">Terms &amp; Conditions</a> |
+			<a href="http://swinguniverse.com/shamrock2/privacy" title="Privacy Policy">Privacy Policy</a> |
+			<a href="http://swinguniverse.com/shamrock2/mission" title="Mission Statement">Mission Statement</a> |
+			<a href="http://swinguniverse.com/shamrock2/contact" title="Contact Us">Contact</a>
+            				                    | <a href="http://swinguniverse.com/shamrock2/peoplepods/admin" title="Admin Tools">Admin Tools</a>
+                            	
+            <br>
+			©2013 TheShamrockClub.com
+		<div id="mobileon" class="hidden-mobile hidden-desktop"><hr>Turn Mobile Version On</div>
+		<div id="mobileoff" class="hidden-desktop"><hr>Turn Mobile Version Off</div>
+		</div>
+		<div class="clearer"></div>
+	</footer>
+
 
 </body></html>
